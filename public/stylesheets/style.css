@@ -107,6 +107,15 @@ button:focus {
     }
 }
 
+@media all and (max-width: 699px) {
+    body {
+        padding: 10px;
+    }
+    .postcode, .vote-check {
+        width: 100%;
+    }
+}
+
 .emails {
     float: left;
     margin: auto 0;

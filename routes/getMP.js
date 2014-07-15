@@ -16,7 +16,7 @@ function getMPdata(url, data, res) {
         if (!err) {
             var result = JSON.parse(body);
 
-            if (typeof (result.length) !== undefined ) {
+            if (result.results.constituencies.length > 0 ) {
                 data = {
                     mpName : result.results.constituencies[0].member_name,
                     mpConstituency : result.results.constituencies[0].constituency_name,
@@ -25,7 +25,6 @@ function getMPdata(url, data, res) {
 
                 scrapeBio(data, res);
             } else {
-                res.writeHeaders("400")
                 res.send("Incorrect Postcode");
             }
 

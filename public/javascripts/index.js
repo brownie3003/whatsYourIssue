@@ -12,7 +12,7 @@ $(function() {
     }
 
     function createTweetLink(handle) {
-        var twtTitle  = "Hey " + handle + " I'm not happy that you're voting for DRIP without even debating it #voteAgainstDRIP";
+        var twtTitle  = "Hey " + handle + " I'm not happy that you're voting for DRIP without even debating it #DRIP";
         var twtUrl    = location.href;
         var maxLength = 140 - (twtUrl.length + 1);
         if (twtTitle.length > maxLength) {
@@ -27,6 +27,10 @@ $(function() {
             $(".two").fadeIn();
         });
     });
+
+    $(".postcode input").keypress(function() {
+        $("#postcodeSubmit").fadeIn();
+    })
 
     $(".postcode").submit(function(e) {
         e.preventDefault();

@@ -12,10 +12,6 @@ body {
     text-align: center;
 }
 
-a {
-    color: #00B7FF;
-}
-
 input:focus,
 select:focus,
 textarea:focus,
@@ -39,21 +35,21 @@ button:focus {
 }
 
 .no button {
-    background-color: red;
-    color: white;
+    background-color: #c0392b;
     height: 2.5em;
     width: 66%;
     border: none;
+    border-bottom: 0.2em solid #e74c3c;
     font-size: 35px;
     color: whitesmoke;
 }
 
 .yes button {
-    background-color: red;
-    color: white;
+    background-color: #27ae60;
     height: 2.5em;
     width: 66%;
     border: none;
+    border-bottom: 0.2em solid #2ecc71;
     font-size: 35px;
     color: whitesmoke;
     margin-bottom: 2em;
@@ -65,14 +61,17 @@ button:focus {
 }
 
 .postcode input {
-    width: 100%;
     background-color: #003D6B;
     border: none;
-    border-bottom: 0.5em solid #358ED2;
+    border-bottom: 0.2em solid #358ED2;
     font-size: 2em;
     color: whitesmoke;
     padding: 0.5em;
     text-align: center;
+}
+
+#postcodeSubmit {
+    font-size: 1.6em;
 }
 
 #constituency {

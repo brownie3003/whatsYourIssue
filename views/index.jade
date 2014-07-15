@@ -1,0 +1,46 @@
+extends layout
+
+block content
+    .main.one()
+        h1
+            | On Tuesday 15
+            sup th 
+            | of July the Government will rush through a bill that substantially reduces a
+            | a citizens right to privacy. This bill was proposed less than 5 days ago and
+            | will be passed with no debate and little public awareness.
+        h1
+            | Does this concern you?
+        .buttons
+            .yes
+                button Yes
+            .no
+                button No
+
+    .main.two(hidden)
+        h1
+            | Great
+        h1
+            | In order to make a difference you should talk to your MP.
+        p 
+            | Put in your postcode and we'll tell you who that is and make it easy to let them know your concerns.
+        form.postcode
+            input(type="text")
+
+    .main.three(hidden)
+        h1#mpName
+        p#constituency
+        img#mpPhoto
+
+        .buttons
+            .email
+                a
+                    button 
+                        img.email-svg(src="images/email.svg")
+                p.italic
+                    | This will open an email for you with some pre-prepared text. We encourage you to edit it.
+            .tweet
+                a(target="_blank")
+                    button
+                        img.twitter-svg(src="images/twitter.svg")
+                p.italic
+                    | Modern stuff this.

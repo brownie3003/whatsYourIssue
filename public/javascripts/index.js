@@ -33,7 +33,7 @@ $(function() {
         var data = {postcode: $("input").val()}
 
         $.ajax({
-            url: "http://localhost:3000/getMP",
+            url: "/getMP",
             data: data,
             success: function (responseData) {
                 loadshit(responseData);

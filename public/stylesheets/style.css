@@ -59,12 +59,12 @@ button:focus {
     margin-bottom: 2em;
 }
 
-.postcode {
+.postcode, .vote-check {
     width: 30%;
     margin: 0 auto;
 }
 
-.postcode input {
+.postcode input, .vote-check input {
     background-color: #003D6B;
     border: none;
     border-bottom: 0.2em solid #358ED2;
@@ -74,7 +74,7 @@ button:focus {
     text-align: center;
 }
 
-#postcodeSubmit {
+#postcodeSubmit, #emailSubmit {
     font-size: 1.6em;
 }
 
@@ -82,10 +82,6 @@ button:focus {
     margin-top: -1em;
     font-size: 1em;
     font-style: italic;
-}
-
-#mpPhoto {
-    margin-bottom: 1em;
 }
 
 .email button, .tweet button {
@@ -98,6 +94,7 @@ button:focus {
 .italic {
     font-size: 1em;
     font-style: italic;
+    padding: 5px;
 }
 
 .email-svg, .twitter-svg {
@@ -108,4 +105,10 @@ button:focus {
     .buttons {
         width: 60%;
     }
+}
+
+.emails {
+    float: left;
+    margin: auto 0;
+    padding: 3em;
 }

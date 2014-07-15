@@ -35,6 +35,7 @@ block content
         img#mpPhoto
 
         .buttons
+            h3 Contact your MP and let them know how you feel.
             .email
                 a
                     button 
@@ -47,3 +48,12 @@ block content
                         img.twitter-svg(src="images/twitter.svg")
                 p.italic
                     | Modern stuff this.
+    .emails(hidden)
+        p 
+            | We appreciate that you may not wish to give out your email, but if you would like to know which way your MP
+            | votes on this issue we can send you an email afterwards to let you know. We will immediately delete your email
+            | after doing so!
+
+        form.vote-check
+            input(type="text" placeholder="Email")
+            input#emailSubmit(type="submit" value="Keep an eye on my MP")

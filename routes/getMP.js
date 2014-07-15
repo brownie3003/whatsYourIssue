@@ -16,7 +16,7 @@ function getMPdata(url, data, res) {
         if (!err) {
             var result = JSON.parse(body);
 
-            if (result.length > 0) {
+            if (typeof (result.length) !== undefined ) {
                 data = {
                     mpName : result.results.constituencies[0].member_name,
                     mpConstituency : result.results.constituencies[0].constituency_name,

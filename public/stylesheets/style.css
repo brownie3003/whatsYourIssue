@@ -12,6 +12,10 @@ body {
     text-align: center;
 }
 
+a {
+    color: white;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
